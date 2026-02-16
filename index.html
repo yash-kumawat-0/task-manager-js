@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-box">
+        <div class="heading">
+            <div class="progress-bar">
+                <h3 id="tittle">TO-DO APP</h3>
+                <div class="progress">
+                    <div class="inner-progress"></div>
+                </div>
+            </div>
+            <div class="task-count">
+                <div><h1 id="number">0</h1></div>
+            </div>
+        </div>
+        <form action="">
+        <div class="writing-bar">
+            <div class="search">
+                <input type="text" placeholder="Write Your Task" id="taskInput">
+                <button type="submit" id="submitButton">Add Task</button>
+            </div>
+        </div>
+        </form>
+        <div class="list">
+            <ul class="list-ul">
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

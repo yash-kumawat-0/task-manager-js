@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body,html{
+    height: 100%;
+    background-image: url("assests/components/background.gif");
+    background-size: cover;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(1px);
+    padding: 0.5rem 1rem;
+    width: 40%;
+}
+
+.main-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.heading{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tittle{
+    font-size: 3rem;
+    font-weight: 900;
+    background-size: 200%;
+    background-clip: text;
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.6);
+}
+
+.progress{
+    background-color: white;
+    height: 0.5rem;
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+.inner-progress{
+    background-color: #b77de7;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.task-count div{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    background-color: rgba(183, 125, 231, 0.2);
+}
+
+.task-count div h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.writing-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search input{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 3px black;
+    color: #fff;
+    outline: none;
+    flex: 1;
+}
+
+.search input:active{
+    border: none;
+    border: 2px solid #b77de7;
+}
+
+.search input::placeholder{
+    color: white;
+}
+
+.search button{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: #b77de7;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.search button:hover{
+    transform: translateY(-1.5px);
+}
+
+.search button:active{
+    transform: translateY(0);
+    border-bottom: 2px solid #b77de7;
+}
+
+.list{
+    padding: 0.5rem 0;
+}
+
+.list-ul{
+    list-style: none;
+}
+
+.taskItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    background-color: #b77de7;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+}
+
+.taskItem:hover{
+    transform: translateY(-1.5px);
+    transition: all 0.3s ease-in;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task input{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.task input:hover{
+    transform: scale(1.15);
+}
+
+.task p{
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+
+.task.completed p{
+    text-decoration: line-through;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons i{
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    transform: scale(1.15);
+}
+
+
+
+
+#tittle:hover{
+    background-image: url(Images/background.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s linear;
+}
